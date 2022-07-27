@@ -2,5 +2,3 @@
 
 # Chomolungma Programming Environment : Usage
 1. CML(Chomolungma Markup Language)
-See [XML Checker file](document/xc/cml.xc.py)
-
