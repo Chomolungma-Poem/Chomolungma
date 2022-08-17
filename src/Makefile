@@ -1,11 +1,24 @@
-COMMAND=g++ -std=c++14 -w
-COMPILE_TEMPLATE=-o dir/main dir/* -I../3rd-party
+CXX=g++
+CPATH = -I../3rd-party -I.
+CFLAGS=-std=c++20 -w $(CPATH)
+
+COMPILE_TEMPLATE=-o dir/main.exec dir/main.cpp
+
+FIND=find
+FFLAGS=-name
+
+EXECUTABLE=*.exec
+EXEC_FILES=$(shell $(FIND) $(FFLAGS) $(EXECUTABLE))
 
 define compile
-$(COMMAND) $(subst dir,$(1),$(COMPILE_TEMPLATE))
+$(CXX) $(CFLAGS) $(subst dir,$(1),$(COMPILE_TEMPLATE))
 endef
 
-COMPILER = compiler
+mcompiler : compiler
+	$(call compile,compiler)
 
-$(COMPILER) : $(COMPILER)/*
-	$(call compile,$(COMPILER))
+.PHONY : clean
+clean :
+	@for exec in $(EXEC_FILES); do \
+		rm $$exec; \
+	done

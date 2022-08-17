@@ -1,18 +1,23 @@
-// [main.cc] C++ Source
+// [main.cpp] C++ Source
 
 // CHOMOLUNGM Programming Environment
-// Compiler Tool  (Dev 0.0.0.1)
+// Compiler Tool  (Development 0.0.0.1)
 
 // Main file
 
+#include <iostream>
 #include <string>
 
-#include "clipp.h"
+#include "compiler/arguments.hpp"
+#include "compiler/exitoptions.hpp"
+#include "compiler/main.hpp"
 
 using namespace std;
-using namespace clipp;
 
-int main( int argc, char** argv ) {
-    
+int main( int argc, char** argv ) { 
+    Argument arg = control( argc, argv );
+    if(change( arg )) {
+        mainWorking( arg.state );
+    }
     return 0;
 }
