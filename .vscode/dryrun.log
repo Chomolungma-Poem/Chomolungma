@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/chomolungma/code/prj/Chomolungma'
+make: Leaving directory '/home/chomolungma/code/prj/Chomolungma'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
