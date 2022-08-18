@@ -15,9 +15,9 @@
 using namespace std;
 
 int main( int argc, char** argv ) { 
-    Argument arg = control( argc, argv );
+    Argument* arg = control( argc, argv );
     if(change( arg )) {
-        mainWorking( arg.state );
+        mainWorking( arg->state );
     }
     return 0;
 }

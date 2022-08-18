@@ -41,6 +41,9 @@ struct Argument {
     };
     State stateNode;
 
+    Argument(  ) {
+        stateNode = State::State;
+    }
     Argument( const State stat ) {
         stateNode = stat;
     }
@@ -54,15 +57,14 @@ struct Argument {
 
 #if true
 #define CHECKING_INIT \
-    bool flag; \
-    group model;
+    Argument* arg = new Argument(  ); \
+    bool flag;
 #endif
 
 #if true
 #define CHECK( message ) \
     flag = false; \
-    model = message; \
-    arg.result = parse( argc, argv, model ); \
+    arg->result = parse( argc, argv, message ); \
     if(flag == true)
 #endif
 
@@ -76,23 +78,21 @@ struct Argument {
     CHECK( group( CHECKING_FLAG( option( flag1, flag2 ) ) ) )
 #endif
 
-Argument control( int argc, char** argv ) {
-    Argument arg = State::State;
+Argument* control( int argc, char** argv ) {
     CHECKING_INIT
     CHECK_OPTION( "-h", "--help" ) {
-        arg.stateNode = State::Help;
+        arg->stateNode = State::Help;
         return arg;
     }
     CHECK_OPTION( "-v", "--version" ) {
-        arg.stateNode = State::Version;
+        arg->stateNode = State::Version;
         return arg;
     }
     CHECK( group(
-    CHECKING_FLAG( value( "filename", arg.state.filename ) ) ) ) {
-        arg.stateNode = State::State;
+    CHECKING_FLAG( value( "filename", arg->state.filename ) ) ) ) {
         return arg;
     }
-    arg.stateNode = State::Help;
+    arg->stateNode = State::Help;
     return arg;
 }
 

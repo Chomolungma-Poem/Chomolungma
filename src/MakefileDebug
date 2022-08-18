@@ -1,13 +1,13 @@
 CXX=g++
 CPATH=-I../3rd-party -I.
-CFLAGS=-std=c++20 -w $(CPATH)
+CFLAGS=-std=c++20 -w -g $(CPATH)
 
-COMPILE_TEMPLATE=-o dir/main.exec dir/main.cpp
+COMPILE_TEMPLATE=-o dir/main.debug dir/main.cpp
 
 FIND=find
 FFLAGS=-name
 
-EXECUTABLE=*.exec
+EXECUTABLE=*.debug
 EXEC_FILES=$(shell $(FIND) $(FFLAGS) $(EXECUTABLE))
 
 define compile

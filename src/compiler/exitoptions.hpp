@@ -32,12 +32,12 @@ const string VERSION = R"(
 CHOMOLUNGMA Compiler [Development 0.0.0.1] 2022-08-17
 )";
 
-bool change( Argument arg ) {
-    if( arg.stateNode == State::Help ) {
+bool change( Argument* arg ) {
+    if( arg->stateNode == State::Help ) {
         cout << USAGE << endl;
         return false;
     }
-    if( arg.stateNode == State::Version ) {
+    if( arg->stateNode == State::Version ) {
         cout << VERSION << endl;
         return false;
     }
