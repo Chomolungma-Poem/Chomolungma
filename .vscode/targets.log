@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug 18 08:23:16 2022
+# Make data base, printed on Sat Aug 20 21:56:36 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-03fc1b2a-60cc-42ef-8481-c63707f613ab.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-671d8e2d-9ff6-4aca-9110-27ec035e6fcd.sock
 # environment
 VSCODE_CWD = /home/chomolungma/code/prj/Chomolungma
 # environment
@@ -65,7 +65,7 @@ VSCODE_CODE_CACHE_PATH = /home/chomolungma/.config/Code/CachedData/30d9c6cd9483b
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.BDY4Q1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.IUNSQ1
 # default
 .LOADED := 
 # default
@@ -83,7 +83,7 @@ BASHRC = /home/chomolungma/.bashrc
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -121,7 +121,7 @@ MAKEFILE_LIST :=
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3505
+VSCODE_PID = 34395
 # environment
 GOHOME = /usr/local/go
 # environment
@@ -129,7 +129,7 @@ XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/chomolungma-ThinkPad-T460:@/tmp/.ICE-unix/1905,unix/chomolungma-ThinkPad-T460:/tmp/.ICE-unix/1905
+SESSION_MANAGER = local/chomolungma-ThinkPad-T460:@/tmp/.ICE-unix/1931,unix/chomolungma-ThinkPad-T460:/tmp/.ICE-unix/1931
 # automatic
 *F = $(notdir $*)
 # environment
@@ -181,7 +181,7 @@ JULIA_HOME = /usr/local/julia
 # environment
 ALIAS = /home/chomolungma/.bash_aliases
 # environment
-INVOCATION_ID = 5a0993266c1a489dbde093c830a18595
+INVOCATION_ID = 2ce15f253f2646af8cca974552f2005b
 # environment
 ROOT_SBIN = /bin
 # environment
@@ -227,7 +227,7 @@ JULIA_PATH = /usr/local/julia/bin
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 1968
+SYSTEMD_EXEC_PID = 1976
 # environment
 DISPLAY = :0
 # environment
@@ -239,9 +239,9 @@ MAKE_VERSION := 4.3
 # environment
 ENVIRONMENT_VARIBLE = /home/chomolungma/.bash_environment_varibles
 # environment
-MANAGERPID = 1759
+MANAGERPID = 1772
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2574
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2594
 # environment
 JAVA_PATH = /usr/local/java/bin
 # environment
@@ -255,7 +255,7 @@ COLORTERM = truecolor
 # environment
 NODE_PATH = /usr/local/node/bin
 # environment
-JOURNAL_STREAM = 8:32232
+JOURNAL_STREAM = 8:29445
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -274,6 +274,9 @@ CPPINCLUDE = /usr/include/c++/11
 EMPTY = 
 # environment
 ELECTRON_RUN_AS_NODE = 1
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-392e0372-1.68.1-main.sock
 # environment
@@ -281,9 +284,6 @@ TERM = xterm-256color
 # environment
 IM_CONFIG_PHASE = 1
 # default
- 
-make: *** No rule to make target 'all'.  Stop.
-
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
@@ -366,12 +366,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 144 B / avg = 8 B
-# current buf: size = 8162 B / used = 144 B / count = 17 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 135 B / avg = 7 B
+# current buf: size = 8162 B / used = 135 B / count = 17 / avg = 7 B
 
 # strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=0/20=0%
-# Finished Make data base on Thu Aug 18 08:23:16 2022
+# Finished Make data base on Sat Aug 20 21:56:36 2022
 
  
